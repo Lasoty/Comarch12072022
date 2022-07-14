@@ -44,6 +44,20 @@ class Program
                         result = calculator.Fibonacci(n);
                         Console.WriteLine($"{n}-ty wyraz ciągu to {result}.");
                         break;
+                    case 6:
+                        Console.WriteLine("Podaj jakieś liczby (rozdzielone spacją): ");
+                        string numbersLine = Console.ReadLine();
+                        string[] numbersString = numbersLine.Split(" ");
+                        int[] data = new int[numbersString.Length];
+                        int i = 0;
+                        foreach (var item in numbersString)
+                        {
+                            data[i] = int.Parse(item);
+                            i++;
+                        }
+                        int[] tab = calculator.Sort(data);
+                        Console.WriteLine($"Wynik sortowania to: {string.Join(", ", tab)}");
+                        break;
                     default:
                         ShowError("Wybrana pozycja menu jest spoza zakresu.");
                         break;
@@ -69,6 +83,7 @@ class Program
         Console.WriteLine(" 3. Mnożenie");
         Console.WriteLine(" 4. Dzielenie");
         Console.WriteLine(" 5. Fibonacci");
+        Console.WriteLine(" 6. Sortowanie");
         Console.Write("Podaj nr pozycji menu: ");
     }
 

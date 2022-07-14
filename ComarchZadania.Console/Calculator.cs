@@ -39,5 +39,26 @@ namespace ComarchZadania.Console
 
             return result;
         }
+
+        public int[] Sort(int[] ints)
+        {
+            int n = ints.Length;
+
+            do
+            {
+                for (int i = 0; i < n - 1; i++)
+                {
+                    if (ints[i] > ints[i + 1])
+                    {
+                        int tmp = ints[i];
+                        ints[i] = ints[i + 1];
+                        ints[i + 1] = tmp;
+                    }
+                }
+                n--;
+            } while (n > 1);
+
+            return ints;
+        }
     }
 }
