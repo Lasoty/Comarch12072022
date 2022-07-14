@@ -6,6 +6,10 @@ class Program
     public static void Main(string[] args)
     {
         bool isContinue;
+
+        CarManager carManager = new CarManager();
+        carManager.AddCar();
+
         do
         {
             ShowMenu();
@@ -15,6 +19,7 @@ class Program
                 Calculator calculator = new Calculator();
                 int x, y;
                 float result;
+
 
                 switch (wybor)
                 {
