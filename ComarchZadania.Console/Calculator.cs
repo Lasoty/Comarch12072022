@@ -28,5 +28,16 @@ namespace ComarchZadania.Console
         {
             return x / (float)y;
         }
+
+        public int Fibonacci(int n)
+        {
+            int result = 0;
+            if ((n == 1) || (n == 2))
+                result = 1;
+            else
+                result = Fibonacci(n - 1) + Fibonacci(n - 2);
+
+            return result;
+        }
     }
 }
