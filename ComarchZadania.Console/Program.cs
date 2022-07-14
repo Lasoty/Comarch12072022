@@ -35,8 +35,20 @@ class Program
                         break;
                     case 4:
                         GetXY(out x, out y);
-                        result = calculator.Dividy(x, y);
-                        Console.WriteLine($"Wynik dzielenia {x} oraz {y} to {result}.");
+                        try
+                        {
+                            result = calculator.Dividy(x, y);
+                            Console.WriteLine($"Wynik dzielenia {x} oraz {y} to {result}.");
+                        }
+                        catch (DivideByZeroException ex)
+                        {
+                            ShowError(ex.Message);
+                        }
+                        catch (Exception ex)
+                        {
+                            ShowError("Wystąpił nieprzewidziany wyjątek!");
+                            throw;
+                        }
                         break;
                     case 5:
                         Console.WriteLine("Podaj, który wyraz ciągu wibonacciego chcesz obliczyć.");
