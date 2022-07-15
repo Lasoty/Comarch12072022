@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComarchZadania.Console.Test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibliotekarz.Web", "Bibliotekarz.Web\Bibliotekarz.Web.csproj", "{CE6A30D0-B4B9-4915-9540-FF1092F7674A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibliotekarz.Data", "Bibliotekarz.Data\Bibliotekarz.Data.csproj", "{EC761430-681E-4F03-B939-C3733A6D94A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{CE6A30D0-B4B9-4915-9540-FF1092F7674A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE6A30D0-B4B9-4915-9540-FF1092F7674A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE6A30D0-B4B9-4915-9540-FF1092F7674A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC761430-681E-4F03-B939-C3733A6D94A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC761430-681E-4F03-B939-C3733A6D94A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC761430-681E-4F03-B939-C3733A6D94A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC761430-681E-4F03-B939-C3733A6D94A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Bibliotekarz.Data\Bibliotekarz.Data.csproj" />
+  </ItemGroup>
+
 </Project>
