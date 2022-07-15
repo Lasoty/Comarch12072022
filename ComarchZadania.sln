@@ -5,7 +5,9 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComarchZadania.Console", "ComarchZadania.Console\ComarchZadania.Console.csproj", "{C8996F3A-4D1D-4DB6-BBC5-BBE32B4FEC6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComarchZadania.Console.Tests", "ComarchZadania.Console.Tests\ComarchZadania.Console.Tests.csproj", "{626C75BD-BEFF-4E5A-A20E-8E5CF196FB91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComarchZadania.Console.Tests", "ComarchZadania.Console.Tests\ComarchZadania.Console.Tests.csproj", "{626C75BD-BEFF-4E5A-A20E-8E5CF196FB91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibliotekarz.Web", "Bibliotekarz.Web\Bibliotekarz.Web.csproj", "{CE6A30D0-B4B9-4915-9540-FF1092F7674A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{626C75BD-BEFF-4E5A-A20E-8E5CF196FB91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{626C75BD-BEFF-4E5A-A20E-8E5CF196FB91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{626C75BD-BEFF-4E5A-A20E-8E5CF196FB91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE6A30D0-B4B9-4915-9540-FF1092F7674A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE6A30D0-B4B9-4915-9540-FF1092F7674A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE6A30D0-B4B9-4915-9540-FF1092F7674A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE6A30D0-B4B9-4915-9540-FF1092F7674A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
