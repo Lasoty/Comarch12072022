@@ -1,6 +1,8 @@
-﻿using Bibliotekarz.Data.Model;
+﻿using Bibliotekarz.Data.Context;
+using Bibliotekarz.Data.Model;
 using Bibliotekarz.Web.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 
 namespace Bibliotekarz.Web.Controllers
@@ -8,10 +10,14 @@ namespace Bibliotekarz.Web.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly BibliotekarzDbContext dbContext;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, BibliotekarzDbContext dbContext)
         {
             _logger = logger;
+            this.dbContext = dbContext;
+
+            dbContext.Database.Migrate();
         }
 
         public IActionResult Index()

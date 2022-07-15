@@ -1,3 +1,6 @@
+using Bibliotekarz.Data.Context;
+using Microsoft.EntityFrameworkCore;
+
 namespace Bibliotekarz.Web
 {
     public class Program
@@ -5,6 +8,11 @@ namespace Bibliotekarz.Web
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            builder.Services.AddDbContext<BibliotekarzDbContext>(option => 
+            {
+                option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectioString"));
+            });
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
