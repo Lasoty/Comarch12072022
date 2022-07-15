@@ -17,7 +17,7 @@ namespace Bibliotekarz.Web.Controllers
         public IActionResult Index()
         {
             IndexViewModel vm = GetBooks();
-            return View();
+            return View(vm);
         }
 
         private IndexViewModel GetBooks()

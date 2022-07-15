@@ -1,10 +1,11 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@model IndexViewModel
 
 <div class="text-center">
     <table class="table tab-content">
-        <thead>
+        <thead>            
             <tr>
                 <th>#</th>
                 <th>Autor</th>
@@ -15,30 +16,17 @@
             </tr>
         </thead>
         <tbody>
+            @foreach (var book in Model.BookList)
+            {
             <tr>
-                <th>1.</th>
-                <td>Leszek Lewandowski</td>
-                <td>Programowanie w C#</td>
-                <td>456</td>
-                <td>Tak</td>
-                <td>Jan Kowalski</td>
+                <th>@book.Id</th>
+                <td>@book.Author</td>
+                <td>@book.Title</td>
+                <td>@book.PageCount</td>
+                <td>@(book.IsBorrowed ? "Tak" : "Nie")</td>
+                <td>@($"{book.Borrower?.FirstName} {book.Borrower?.LastName}")</td>
             </tr>
-            <tr>
-                <th>1.</th>
-                <td>Leszek Lewandowski</td>
-                <td>Programowanie w C#</td>
-                <td>456</td>
-                <td>Tak</td>
-                <td>Jan Kowalski</td>
-            </tr>
-            <tr>
-                <th>1.</th>
-                <td>Leszek Lewandowski</td>
-                <td>Programowanie w C#</td>
-                <td>456</td>
-                <td>Tak</td>
-                <td>Jan Kowalski</td>
-            </tr>
+            }
         </tbody>
     </table>
 
